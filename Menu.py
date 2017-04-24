@@ -57,9 +57,17 @@ def process_key():
                 option -= 1
         elif key == Vector.DOWN and option < 3:
             if size == 2:
-                size_height -= 1
+                # control minimum value
+                if size_height > 10:
+                    size_height -= 1
+                else:
+                    pass
             elif size == 3:
-                size_width -= 1
+                # control minimum value
+                if size_width > 5:
+                    size_width -= 1
+                else:
+                    pass
             else:
                 option += 1
         elif key == Vector.LEFT:
