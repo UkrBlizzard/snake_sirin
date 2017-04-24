@@ -24,7 +24,7 @@ def show_menu(option, size, size_height, size_width, game_speed, size_string, ga
     print(">" if option == 3 else " ", "Quit")
 
 
-def startGame(size, height, width, speed, size_height, size_width, game_speed):
+def start_game(size, height, width, speed, size_height, size_width, game_speed):
     """ game initialization """
 
     if size == 0: height, width = 80, 120
@@ -115,5 +115,5 @@ while not quit:
 
     # start the game
     if play:
-        startGame(size, height, width, speed, size_height, size_width, game_speed)
+        start_game(size, height, width, speed, size_height, size_width, game_speed)
         play = False
