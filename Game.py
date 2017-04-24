@@ -108,6 +108,7 @@ class Game:
 
         # show the score as part of bottom border
         score_string = "| SCORE: " + str(self.score) + " |"
+        # check for SCORE to match inside bottom border
         score_string = score_string if len(score_string) + 2 <= self.width else "| " + str(self.score) + " |"
         string += "#" + score_string.center(self.width, "-") + "#\n"
 
